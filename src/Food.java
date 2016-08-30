@@ -49,9 +49,13 @@ public class Food {
         return name;
     }
 
+    public boolean checkJunk(){
+        return type == "junk food";
+    }
+
     public void setHealthy(boolean h){
         this.isHealthy = h;
-            if(type == "junk food") {
+            if(checkJunk()) {
                 this.isHealthy = false;
             }
     }

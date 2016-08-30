@@ -4,7 +4,7 @@
 public class Painting {
     private int year;
     private boolean inMuseum;
-    private String name;
+    String name;
     private String artist;
 
 
@@ -15,9 +15,15 @@ public class Painting {
         this.name = name;
         this.artist = artist;
     }
+
+    public boolean checkYear(){
+        return year > 2016;
+    }
+
     public void setYear(int y){
         this.year = y;
-            if(y > 2016) this.year = 2016;
+            if(checkYear())
+                this.year = 2016;
     }
 
     public int getYear(){
@@ -46,6 +52,13 @@ public class Painting {
 
     public String getArtist(){
         return artist;
+    }
+
+    public void changeName(String name){
+        String[] twoNames = this.name.split(" ");
+        twoNames[1] = name;
+        this.name = twoNames[0] + " " + twoNames[1];
+
     }
 
 

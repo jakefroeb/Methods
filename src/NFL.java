@@ -40,9 +40,13 @@ public class NFL {
             return superbowls;
         }
 
+        public boolean checkName(){
+            return teamName == "Titans";
+        }
+
         public void setIsGood(boolean i){
             this.isGood = i;
-                if(teamName == "Titans") {
+                if(checkName()) {
                     this.isGood = true;
                 }
         }

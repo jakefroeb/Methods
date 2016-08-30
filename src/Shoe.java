@@ -42,9 +42,13 @@ public class Shoe {
         return style;
     }
 
+    public boolean checkSize(){
+        return size < 7;
+    }
+
     public void setIsMale(boolean i){
         this.isMale = i;
-            if(size < 7) {
+            if(checkSize()) {
                 this.isMale = false;
             }
     }

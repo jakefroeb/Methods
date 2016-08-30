@@ -32,9 +32,13 @@ public class HotChicken {
         return coordinates;
     }
 
+    public boolean howHot(){
+        return isHot = false;
+    }
+
     public void setName(String n){
         this.name = n;
-            if(isHot = false) {
+            if(howHot()) {
                 this.name = "Hattie B's";
             }
     }
@@ -66,4 +70,5 @@ public class HotChicken {
     public boolean getIsHot(){
         return isHot;
     }
+
 }

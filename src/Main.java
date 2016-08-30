@@ -33,5 +33,7 @@ public class Main {
                 s[5]="Collard Greens";
         HotChicken chicken = new HotChicken(c, "Princes", s, 2, true);
 
+
+        painting.changeName("Morning");
     }
 }

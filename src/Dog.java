@@ -13,10 +13,14 @@ public class Dog {
         this.medicines = medicines;
     }
 
+    public boolean checkAge(){
+        return age < 0;
+    }
+
 
     public void setAge(int a){
         this.age = a;
-            if(age < 0) {
+            if(checkAge()) {
                 this.age = 0;
             }
     }
